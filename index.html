@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Visualization Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">3D Viz Portfolio</a>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <video autoplay loop muted playsinline id="showreel">
+                <source src="assets/videos/showreel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>3D Visualization Portfolio</h1>
+                <p>Bringing imagination to life through stunning 3D visuals</p>
+                <a href="#gallery" class="cta-button">View Gallery</a>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="architectural">
+                    <span class="icon">🏙️</span>
+                    <h3>Architectural Visualization</h3>
+                </div>
+                <div class="gallery-item" data-category="product">
+                    <span class="icon">📱</span>
+                    <h3>Product Design</h3>
+                </div>
+                <div class="gallery-item" data-category="character">
+                    <span class="icon">🦸</span>
+                    <h3>Character Design</h3>
+                </div>
+                <div class="gallery-item" data-category="environment">
+                    <span class="icon">🌍</span>
+                    <h3>Environment Design</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <h3>Passionate 3D Visualizer</h3>
+                <p>I'm a 3D visualization artist with over 5 years of experience in creating stunning visual experiences. 
+                My expertise spans across architectural visualization, product design, and interactive 3D web experiences.</p>
+                <p>Using cutting-edge tools and techniques, I bring ideas to life in ways that captivate and inspire. 
+                Whether it's a futuristic cityscape or a detailed product showcase, I'm committed to delivering 
+                high-quality visuals that exceed expectations.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2023 3D Viz Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Email</a>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="hidden">
+        <div class="lightbox-content">
+            <button id="close-lightbox">&times;</button>
+            <h3 id="category-title"></h3>
+            <div id="lightbox-items"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
