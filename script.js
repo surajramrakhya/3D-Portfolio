@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeLightbox.addEventListener('click', () => {
-        lightbox.classList.add('hidden');
+        lightbox.classList.remove('active');
+        setTimeout(() => lightbox.classList.add('hidden'), 300);
     });
 
     function openLightbox(category) {
@@ -96,6 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         lightbox.classList.remove('hidden');
+        setTimeout(() => lightbox.classList.add('active'), 50);
     }
 });
-
