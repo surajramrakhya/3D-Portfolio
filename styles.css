@@ -149,8 +149,8 @@ h2 {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(5px); /* Updated blur effect */
-  transform: scale(1.1);
+  filter: blur(3px); /* Reduced blur effect */
+  transform: scale(1.05); /* Slightly reduced scale */
 }
 
 .blurred-preview video {
@@ -352,6 +352,11 @@ footer {
   color: white;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.scroll-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
