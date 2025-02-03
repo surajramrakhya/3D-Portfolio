@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeLightbox = document.getElementById("close-lightbox")
   const lightboxItems = document.getElementById("lightbox-items")
   const categoryTitle = document.getElementById("category-title")
+  const hamburger = document.querySelector(".hamburger")
+  const navMenu = document.querySelector(".nav-menu")
 
   const categories = {
     architectural: {
@@ -69,6 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.remove("active")
     setTimeout(() => lightbox.classList.add("hidden"), 300)
   })
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+  })
+
+  document.querySelectorAll(".nav-menu li a").forEach((n) =>
+    n.addEventListener("click", () => {
+      hamburger.classList.remove("active")
+      navMenu.classList.remove("active")
+    }),
+  )
 
   function openLightbox(category) {
     const categoryData = categories[category]
