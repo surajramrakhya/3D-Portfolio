@@ -1,15 +1,12 @@
-# 3D Visualization Portfolio
+# Personal Portfolio 
 
-This is a portfolio website showcasing 3D visualization work. It features a dynamic gallery, about section, and contact information.
+> https://surajramrakhya.github.io/
 
-## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnp dev
-
+### Portfolio Preview
+<p align="center"> 
+  <kbd>
+    <a href="https://surajramrakhya.github.io/" target="_blank"><img src="assets/preview.gif">
+  </a>
+  </kbd>
+</p>
