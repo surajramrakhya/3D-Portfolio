@@ -27,20 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
     product: {
       name: "Product Design",
       items: [
-        { type: 'image', src: 'assets/images/product/product1.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-        { type: 'image', src: 'assets/images/product/product2.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-        { type: 'image', src: 'assets/images/product/product3.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-        { type: 'image', src: 'assets/images/product/product4.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-        { type: 'video', src: 'assets/videos/product/wine.mp4', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-        { type: 'video', src: 'assets/videos/product/cola.mp4', alt: 'Coco-Cola', title: 'Coco-Cola' },
-        { type: 'video', src: 'assets/videos/product/headphone.mp4', alt: 'Headphones', title: 'Headphones' },
+        { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink Animation' },
+        { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },
       ],
     },
     cgiAdvertisement: {
       name: "CGI Advertisement",
       items: [
-        { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink A
-        { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },      ],
+        { type: "image", src: "placeholder.svg", alt: "Luxury Car Ad", title: "Sleek Performance" },
+        { type: "video", src: "sample-video.mp4", alt: "Soft Drink Commercial", title: "Refreshing Splash" },
+        { type: "image", src: "placeholder.svg", alt: "Smartphone Feature Showcase", title: "Next-Gen Tech" },
+        { type: "image", src: "placeholder.svg", alt: "Cosmetics Product Shot", title: "Radiant Beauty" },
+        { type: "video", src: "sample-video.mp4", alt: "Sports Shoe Animation", title: "Peak Performance" },
+        { type: "image", src: "placeholder.svg", alt: "Food Product Rendering", title: "Culinary Delight" },
+        { type: "image", src: "placeholder.svg", alt: "Jewelry Advertisement", title: "Timeless Elegance" },
+      ],
     },
     environment: {
       name: "Environment Design",
@@ -157,19 +158,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let scrollAmount
     if (direction === "next") {
-      scrollAmount = itemWidth
+      scrollAmount = itemWidth * visibleItems
       if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
         container.scrollTo({ left: 0, behavior: "smooth" })
-        return
+      } else {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" })
       }
     } else {
-      scrollAmount = -itemWidth
+      scrollAmount = -itemWidth * visibleItems
       if (container.scrollLeft === 0) {
         container.scrollTo({ left: container.scrollWidth - container.offsetWidth, behavior: "smooth" })
-        return
+      } else {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" })
       }
     }
-    container.scrollBy({ left: scrollAmount, behavior: "smooth" })
+    setTimeout(updateScrollButtonsVisibility, 310) // Update after scroll animation
   }
 
   function updateScrollButtonsVisibility() {
@@ -178,15 +181,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector(".next-button")
 
     if (container.scrollLeft === 0) {
-      prevButton.style.opacity = "0.5"
+      prevButton.classList.add("scroll-button-disabled")
     } else {
-      prevButton.style.opacity = "1"
+      prevButton.classList.remove("scroll-button-disabled")
     }
 
-    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-      nextButton.style.opacity = "0.5"
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1) {
+      nextButton.classList.add("scroll-button-disabled")
     } else {
-      nextButton.style.opacity = "1"
+      nextButton.classList.remove("scroll-button-disabled")
     }
   }
 
