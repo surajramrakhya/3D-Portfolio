@@ -149,7 +149,7 @@ h2 {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(10px);
+  filter: blur(5px); /* Updated blur effect */
   transform: scale(1.1);
 }
 
@@ -284,13 +284,18 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7); /* Updated background color */
   color: white;
   border: none;
   font-size: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem; /* Updated padding */
   cursor: pointer;
   z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Updated hover background color */
 }
 
 .prev-button {
@@ -379,3 +384,4 @@ footer {
     flex: 0 0 calc(100% / 3 - 1rem);
   }
 }
+
