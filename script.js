@@ -39,20 +39,21 @@ document.addEventListener("DOMContentLoaded", () => {
     cgiAdvertisement: {
       name: "CGI Advertisement",
       items: [
-        { type: "image", src: "placeholder.svg", alt: "Luxury Car Ad", title: "Sleek Performance" },
-        { type: "video", src: "sample-video.mp4", alt: "Soft Drink Commercial", title: "Refreshing Splash" },
-        { type: "image", src: "placeholder.svg", alt: "Smartphone Feature Showcase", title: "Next-Gen Tech" },
-        { type: "image", src: "placeholder.svg", alt: "Cosmetics Product Shot", title: "Radiant Beauty" },
-        { type: "video", src: "sample-video.mp4", alt: "Sports Shoe Animation", title: "Peak Performance" },
-        { type: "image", src: "placeholder.svg", alt: "Food Product Rendering", title: "Culinary Delight" },
-        { type: "image", src: "placeholder.svg", alt: "Jewelry Advertisement", title: "Timeless Elegance" },
+        { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink Animation' },
+        { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },
       ],
     },
     environment: {
       name: "Environment Design",
       items: [
-        { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink Animation' },
-        { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },
+        { type: 'image', src: 'assets/images/env/environment1.png', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
+        { type: 'video', src: 'assets/videos/env/env1.mp4', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
+        { type: 'image', src: 'assets/images/env/environment2.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment3.png', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
+        { type: 'video', src: 'assets/videos/env/env2.mp4', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
+        { type: 'image', src: 'assets/images/env/environment4.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment5.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment6.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
       ],
     },
   }
@@ -215,3 +216,4 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
+
