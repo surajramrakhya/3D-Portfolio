@@ -9,51 +9,50 @@ document.addEventListener("DOMContentLoaded", () => {
     architectural: {
       name: "Architectural Visualization",
       items: [
-                { type: 'image', src: 'assets/images/archviz/interior.png', alt: 'interior', title: 'interior' },
-                { type: 'image', src: 'assets/images/archviz/interior2.png', alt: 'interior', title: 'interior' },
-                { type: 'image', src: 'assets/images/archviz/interior3.png', alt: 'interior', title: 'interior' },
-				{ type: 'image', src: 'assets/images/archviz/interior4.png', alt: 'interior', title: 'interior' },
-				{ type: 'image', src: 'assets/images/archviz/interior5.png', alt: 'interior', title: 'interior' },
-				{ type: 'image', src: 'assets/images/archviz/interior6.png', alt: 'interior', title: 'interior' },
-				{ type: 'image', src: 'assets/images/archviz/interior7.jpg', alt: 'interior', title: 'interior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior.jpg', alt: 'exterior', title: 'exterior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior2.png', alt: 'exterior', title: 'exterior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior3.png', alt: 'exterior', title: 'exterior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior4.jpg', alt: 'exterior', title: 'exterior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior5.png', alt: 'exterior', title: 'exterior' },
-				{ type: 'image', src: 'assets/images/archviz/exterior6.png', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/interior.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior2.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior3.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior4.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior5.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior6.png', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/interior7.jpg', alt: 'interior', title: 'interior' },
+        { type: 'image', src: 'assets/images/archviz/exterior.jpg', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/exterior2.png', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/exterior3.png', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/exterior4.jpg', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/exterior5.png', alt: 'exterior', title: 'exterior' },
+        { type: 'image', src: 'assets/images/archviz/exterior6.png', alt: 'exterior', title: 'exterior' },
       ],
     },
     product: {
       name: "Product Design",
       items: [
-                { type: 'image', src: 'assets/images/product/product1.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-				{ type: 'image', src: 'assets/images/product/product2.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-				{ type: 'image', src: 'assets/images/product/product3.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-				{ type: 'image', src: 'assets/images/product/product4.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-                { type: 'video', src: 'assets/videos/product/wine.mp4', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
-                { type: 'video', src: 'assets/videos/product/cola.mp4', alt: 'Coco-Cola', title: 'Coco-Cola' },
-				{ type: 'video', src: 'assets/videos/product/headphone.mp4', alt: 'Headphones', title: 'Headphones' },
+        { type: 'image', src: 'assets/images/product/product1.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
+        { type: 'image', src: 'assets/images/product/product2.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
+        { type: 'image', src: 'assets/images/product/product3.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
+        { type: 'image', src: 'assets/images/product/product4.png', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
+        { type: 'video', src: 'assets/videos/product/wine.mp4', alt: 'Cabernet Franc', title: 'Cabernet Franc' },
+        { type: 'video', src: 'assets/videos/product/cola.mp4', alt: 'Coco-Cola', title: 'Coco-Cola' },
+        { type: 'video', src: 'assets/videos/product/headphone.mp4', alt: 'Headphones', title: 'Headphones' },
       ],
     },
     cgiAdvertisement: {
       name: "CGI Advertisement",
       items: [
-                { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink Animation' },
-                { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },
-      ],
+        { type: 'video', src: 'assets/videos/cgi/Lemonade VFX.mp4', alt: 'Lemonade Drink CG Visualization', title: 'Lemonade Drink A
+        { type: 'video', src: 'assets/videos/cgi/Nike.mp4', alt: 'Nike Jordans CG Visualization', title: 'Nike Jordans Animation' },      ],
     },
     environment: {
       name: "Environment Design",
       items: [
-                 { type: 'image', src: 'assets/images/env/environment1.png', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
-                { type: 'video', src: 'assets/videos/env/env1.mp4', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
-                { type: 'image', src: 'assets/images/env/environment2.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
-				{ type: 'image', src: 'assets/images/env/environment3.png', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
-				{ type: 'video', src: 'assets/videos/env/env2.mp4', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
-				{ type: 'image', src: 'assets/images/env/environment4.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
-				{ type: 'image', src: 'assets/images/env/environment5.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
-				{ type: 'image', src: 'assets/images/env/environment6.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment1.png', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
+        { type: 'video', src: 'assets/videos/env/env1.mp4', alt: 'Ennvironment 1', title: 'Ennvironment 1' },
+        { type: 'image', src: 'assets/images/env/environment2.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment3.png', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
+        { type: 'video', src: 'assets/videos/env/env2.mp4', alt: 'Ennvironment 3', title: 'Ennvironment 3' },
+        { type: 'image', src: 'assets/images/env/environment4.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment5.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
+        { type: 'image', src: 'assets/images/env/environment6.png', alt: 'Ennvironment 2', title: 'Ennvironment 2' },
       ],
     },
   }
@@ -131,6 +130,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       lightboxItems.insertBefore(prevButton, itemsContainer)
       lightboxItems.appendChild(nextButton)
+
+      updateScrollButtonsVisibility()
     }
 
     // Add click event listeners to lightbox items
@@ -142,17 +143,50 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
 
+    itemsContainer.addEventListener("scroll", updateScrollButtonsVisibility)
+
     lightbox.classList.remove("hidden")
     setTimeout(() => lightbox.classList.add("active"), 50)
   }
 
   function scrollItems(direction) {
     const container = document.querySelector(".items-container")
-    const scrollAmount = container.offsetWidth
+    const items = container.querySelectorAll(".lightbox-item")
+    const itemWidth = items[0].offsetWidth + Number.parseInt(window.getComputedStyle(items[0]).marginRight)
+    const visibleItems = Math.floor(container.offsetWidth / itemWidth)
+
+    let scrollAmount
     if (direction === "next") {
-      container.scrollBy({ left: scrollAmount, behavior: "smooth" })
+      scrollAmount = itemWidth
+      if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+        container.scrollTo({ left: 0, behavior: "smooth" })
+        return
+      }
     } else {
-      container.scrollBy({ left: -scrollAmount, behavior: "smooth" })
+      scrollAmount = -itemWidth
+      if (container.scrollLeft === 0) {
+        container.scrollTo({ left: container.scrollWidth - container.offsetWidth, behavior: "smooth" })
+        return
+      }
+    }
+    container.scrollBy({ left: scrollAmount, behavior: "smooth" })
+  }
+
+  function updateScrollButtonsVisibility() {
+    const container = document.querySelector(".items-container")
+    const prevButton = document.querySelector(".prev-button")
+    const nextButton = document.querySelector(".next-button")
+
+    if (container.scrollLeft === 0) {
+      prevButton.style.opacity = "0.5"
+    } else {
+      prevButton.style.opacity = "1"
+    }
+
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+      nextButton.style.opacity = "0.5"
+    } else {
+      nextButton.style.opacity = "1"
     }
   }
 
