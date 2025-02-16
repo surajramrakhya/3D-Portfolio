@@ -7,6 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger")
   const navMenu = document.querySelector(".nav-menu")
 
+  // Pre-load gallery thumbnails
+  galleryItems.forEach((item) => {
+    const category = item.dataset.category
+    const categoryData = categories[category]
+    if (categoryData && categoryData.items.length > 0) {
+      const firstItem = categoryData.items[0]
+      const previewElement = document.createElement("div")
+      previewElement.classList.add("blurred-preview")
+      if (firstItem.type === "image") {
+        previewElement.style.backgroundImage = `url(${firstItem.src})`
+      } else if (firstItem.type === "video") {
+        previewElement.innerHTML = `
+          <video src="${firstItem.src}" muted loop>
+            Your browser does not support the video tag.
+          </video>
+        `
+      }
+      item.innerHTML = ""
+      item.appendChild(previewElement)
+    }
+  })
+
   const categories = {
     architectural: {
       name: "Architectural Visualization",
